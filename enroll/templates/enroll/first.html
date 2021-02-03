@@ -1,0 +1,14 @@
+{% extends 'enroll/base.html' %}
+{% block content %}
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+<div class="col-sm-2 offset-5">
+    <form action="{% url 'addnshow' %}" method="post" class="d-inline">  
+      {% csrf_token %}
+      <h5 class="text-center alert alert-info">
+        <input type="submit" value="CLICK HERE" >
+      </h5>
+    </form>
+</div>
+{% endblock content%}
